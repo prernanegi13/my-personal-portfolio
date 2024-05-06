@@ -1,9 +1,9 @@
 // window onload event
 
-function load()
-{
-    alert("Welcome to Prerna Negi portfolio")
-}
+// function load()
+// {
+//     alert("Welcome to Prerna Negi portfolio")
+// }
 
 
 //  window resize function.....
@@ -16,56 +16,36 @@ function load()
 //  form validation 
  function validation ()
  {
-    let uname = document.getElementById("inputname").value;
+    let username = document.getElementById("inputname").value;
     let email= document.getElementById("inputEmail").value;
     let contact = document.getElementById("inputContact").value;
     let add = document.getElementById("inputAddress").value;
     let city = document.getElementById("inputCity").value;
     let state = document.getElementById("inputState").value;
 
-
-  
-
-    if(uname.length==0)
-    {
-       alert("name should not be empty...!") + "<br>" 
-    }
-
-    if(email.length==0)
-    {
-        alert("email should not be empty...!") + "<br>"
-    }
-
-    
-    if(add.length==0)
-    {
-        alert("write your proper address below") + "<br>"     
-    }
-
-    if(city.length==0)
-    {
-        alert("mention your city") + "<br>"
-    }
-
-    if(state==0)
+    if(username==""||email==""||contact==""||add==""||city==""||state=="")
         {
-            alert("select your state from below..!")
+            alert("All Field are mandatory");
+            return false;
         }
 
-    
-    if(contact.length!==0)
-    {
-        if(contact.length>10 || contact.length<10)
-            alert("contact number should be of 10 digits only") + "<br>"
+        else if(contact.length>10 || contact.length<10)
+        {
+        alert("contact number should be of 10 digits only") 
+        return false
         }
+
+        else if(isNaN(contact))
+            {
+            alert("only numbers are allowed ! please enter valid number") 
+            return false
+            }
         else
         {
-            alert("Phone number should not be empty...!") + "<br>"
+            true;
         }
-
-     
-    
-} ;
+ } 
+  
 
 // form function of keyup to change letter case and background color
  
