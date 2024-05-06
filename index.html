@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="this is my first portfolio website" />
+    <meta name="robots" content="no inbox no follow" />
+    <title>Portfolio</title>
+
+    <!--Aos css cdn link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Bootstrap cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Our css link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- boxicons font css link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body onresize="resize()" onload="load()">
+    <!-- Header start from here -->
+    <header id="Home">
+      <!-- navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white px-4 border-bottom fixed-top"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand fs-2" href="#"
+            >PN<span class="text-primary">Port</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 ">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-primary"
+                  aria-current="page"
+                  href="#Home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#Skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#Projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar close here -->
+
+      <div class="container-fluid">
+        <div class="row my-5">
+          <div class="col-sm-12 col-md-12 col-lg-6 col-12 my-5 py-5">
+            <h2 class="fs-1 text-center">
+              Hi, I Am <span class="text-primary">Prerna</span>
+              <br />
+              and I Am a Passionate
+              <br />
+              <span class="text-primary">Web Developer </span>
+            </h2>
+            <div class="my-4 py-3 text-center">
+              <a onclick="resume()"
+                class="btn btn-primary px-5 m-2"
+                id="btnR"
+                href="Documents/Prerna's Resume.pdf"
+                target="_blank"
+                role="button"
+                >View Resume</a
+              >
+              <a onclick="git()"
+                class="btn btn-primary px-5 mx--1"
+                id="btnG"
+                href="https://github.com/prernanegi13/Portfolio.git"
+                target="_blank"
+                role="button"
+                >Visit Github</a
+              >
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-12 col-lg-6 col-12 ps-5 my-5 py-4">
+            <img
+              class="image-fluid"
+              src="images/bg.png.png"
+              alt="home page image"
+              width="80%"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header close here -->
+
+    <!-- About section start from here -->
+
+    <section class="about my-5" id="About">
+      <div class="container">
+        <div class="text-center my-5 mx-auto">
+          <h1 data-aos="fade-up" data-aos-offset="250">
+            About <span class="text-primary">Me</span>
+          </h1>
+          <hr class="mx-auto w-25" />
+        </div>
+        <div class="row">
+          <div
+            class="col-sm-12 col-md-6 col-lg-6 col-12 p-4"
+            data-aos="fade-right"
+            data-aos-offset="200"
+          >
+            <img
+              src="images/about.jpg"
+              alt="about me"
+              width="100%"
+              class="img-fluid"
+            />
+          </div>
+          <div
+            class="col-sm-12 col-md-6 col-lg-6 col-12 py-5"
+            data-aos="zoom-in"
+            data-aos-offset="250"
+          >
+            <h1>What do you <span class="text-primary">want to know?</span></h1>
+            <p class="p-2">
+              My name is prerna. I am a <q>Full stack web Developer</q>. I
+              create responsive Websites.I live in pune city.
+            </p>
+            <p class="p-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              velit quisquam, adipisci nam error esse quod, perferendis beatae
+              magni incidunt sint reiciendis eius animi voluptatibus! Rem
+              dolorem, repellendus aspernatur deserunt tenetur reiciendis error,
+              cumque eaque facere quia, sapiente id. Saepe doloremque eligendi
+              rem tenetur? Culpa necessitatibus alias vitae facilis repellendus.
+            </p>
+
+            <button type="button" class="btn btn-light mb-5">
+              More about me
+            </button>
+
+            <div
+              class="accordion"
+              id="accordionExample"
+              data-aos="zoom-in-left"
+              data-aos-offset="250"
+              data-aos-delay="100"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    My Hobbies
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It
+                    is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    My Qualfication
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    My Dreams
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section close here -->
+
+    <!-- skills section start from here -->
+
+    <section class="skill py-5 bg-light" id="Skills">
+      <div class="container">
+        <div class="text-center my-5 mx-auto">
+          <h1 data-aos="zoom-in-down" data-aos-offset="200">
+            Ski<span class="text-primary">lls</span>
+          </h1>
+          <hr class="mx-auto w-25" />
+        </div>
+
+        <div class="row" data-aos="zoom-in" data-aos-offset="200">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12 mb-2">
+            <div class="card">
+              <div class="card-body skilbody">
+                <i
+                  class="bx bxl-html5 p-2 bg-white text-dark rounded p-2"
+                  aria-hidden="true"
+                ></i>
+                <h5 class="card-title">HTML 5</h5>
+                <p class="card-text">
+                  HTML5 is the fifth and new version of HTML Standard. It offers new features that are not just for the rich Media support but enhances web build support Usage that users, their local data, And servers more easily and efficiently than ever before Possible.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12 mb-2">
+            <div class="card">
+              <div class="card-body skilbody">
+                <i
+                  class="bx bxl-css3 text-dark bg-white rounded p-2 mb-2"
+                  aria-hidden="true"
+                ></i>
+                <h5 class="card-title">CSS 3</h5>
+                <p class="card-text">
+                  Cascading Style Sheets (CSS) is a language used to describe the look, style, and appearance of a document written in any markup language. it is used to style and organize the layout of web pages. CSS3 is the latest version of CSS2, the  previous CSS version.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card">
+              <div class="card-body skilbody">
+                <i
+                  class="bx bxl-bootstrap p-2 text-dark bg-white rounded mb-2"
+                  aria-hidden="true"
+                ></i>
+                <h5 class="card-title">BOOTSTRAP</h5>
+                <p class="card-text">
+                  Bootstrap is a free and open source tool collection for Responsive websites and web applications. This is the most famous, To develop HTML, CSS and JavaScript frameworks responsive, Mobile-First Websites. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5" data-aos="zoom-in" data-aos-offset="250">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12 mb-2">
+            <div class="card">
+              <div class="card-body skilbody">
+                <i
+                  class="bx bxl-javascript p-2 bg-white text-dark rounded mb-2"
+                  aria-hidden="true"
+                ></i>
+                <h5 class="card-title">JAVASCRIPT</h5>
+                <p class="card-text">
+                  JavaScript, frequently abridged as JS, is a programming language that adjusts to the ECMAScript determination. JavaScript is elevated level, regularly without a moment to spare incorporated, and multi-worldview
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12 mb-2">
+            <div class="card">
+              <div class="card-body skilbody">
+                <i
+                  class="bx bxl-postgresql p-2 bg-white text-dark rounded mb-2"
+                  aria-hidden="true"
+                ></i>
+                <h5 class="card-title"> SQL</h5>
+                <p class="card-text">
+                  SQL is a domain-specific language used in programming and for the management of data stored in a relational database management system, or for stream processing in a relational data stream management system.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12 mb-2">
+            <div class="card">
+              <div class="card-body skilbody">
+                <i
+                  class="bx bxl-react p-2 text-dark bg-white rounded mb-2"
+                  aria-hidden="true"
+                ></i>
+                <h5 class="card-title">REACT</h5>
+                <p class="card-text">
+                  React (You can call it React.js or ReactJS as well) is an open source, Front end, JavaScript library or to create user interface UI components. It is maintained by Facebook and a community Of individual developers and companies. Can be used as a reaction, The basis for the development of single-page or mobile applications.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5" data-aos="zoom-in" data-aos-offset="250">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12 mb-2">
+            <div class="card">
+              <div class="card-body skilbody">
+                <i
+                  class="bx bxl-nodejs p-2 bg-white text-dark rounded mb-2"
+                  aria-hidden="true"
+                ></i>
+                <h5 class="card-title">NODE.JS</h5>
+                <p class="card-text">
+                  Node.jaz is an open source and cross-platform JavaScript runtime The environment. This is a popular tool for almost any type of project! Node.jaz also runs 8 JavaScript engine, native to Google Chrome, Out of the browser. This allows node.jazes to perform more.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12 mb-2">
+            <div class="card">
+              <div class="card-body skilbody">
+                <i
+                  class="bx bx-expand-horizontal p-2 text-dark bg-white rounded mb-2"
+                  aria-hidden="true"
+                ></i>
+                <h5 class="card-title">EXPRESS.JS</h5>
+                <p class="card-text">
+                  Express.j, or Direct Express, is a backend web application Framework for Node.Jazz released as free and open source software. Under the MIT license. It is designed to build web applications And APIs. The important use of Express is to provide logic (server-side) for the web And mobile applications, and as such it is used all over the place.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12 mb-2">
+            <div class="card">
+              <div class="card-body skilbody">
+                <i
+                  class="bx bxl-github p-2 text-dark bg-white rounded mb-2"
+                  aria-hidden="true"
+                ></i>
+                <h5 class="card-title">GITHUB</h5>
+                <p class="card-text">
+                  GitHub is a developer platform that allows developers to create, store, manage and share their code. It uses Git software, providing the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section close here -->
+
+    <!-- Projecr section start from here -->
+
+    <section class="Project my-4 text-center" id="Projects">
+      <div class="container">
+        <div class="text-center my-5 mx-auto">
+          <h1 data-aos="fade-up" data-aos-offset="250">
+            Pro<span class="text-primary">jects</span>
+          </h1>
+          <hr class="mx-auto w-25" />
+        </div>
+
+        <div class="row" data-aos="zoom-in" data-aos-offset="250">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  src="images/projects.png"
+                  class="img-fluid img-thumbnail rounded-circle border border-primary"
+                  alt="project-img"
+                />
+                <h5 class="card-title mt-4 text-danger">Project 1</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary" id="proone" onmouseover="mouseover1()" onmouseout="mouseout1()" >preview</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  src="images/projects.png"
+                  class="img-fluid img-thumbnail rounded-circle border border-primary"
+                  alt="project-img"
+                />
+                <h5 class="card-title mt-4 text-danger">Project 2</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary" id="protwo" onmouseover="mouseover2()" onmouseout="mouseout2()" >Preview</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  src="images/projects.png"
+                  class="img-fluid img-thumbnail rounded-circle border border-primary"
+                  alt=""
+                />
+                <h5 class="card-title mt-4 text-danger">Project 3</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary" id="prothree" onmouseover="mouseover3()" onmouseout="mouseout3()" >preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" data-aos="zoom-in" data-aos-offset="250">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12 mt-4">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  src="images/projects.png"
+                  class="img-fluid img-thumbnail rounded-circle border border-primary"
+                  alt="project-img"
+                />
+                <h5 class="card-title mt-4 text-danger">Project 4</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class=" btn btn-primary" id="profour" onmouseover="mouseover4()" onmouseout="mouseout4()" >preview</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12 mt-4">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  src="images/projects.png"
+                  class="img-fluid img-thumbnail rounded-circle border border-primary"
+                  alt="project-img"
+                />
+                <h5 class="card-title mt-4 text-danger">Project 5</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary" id="profive" onmouseover="mouseover5()" onmouseout="mouseout5()">Preview</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12 mt-4">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  src="images/projects.png"
+                  class="img-fluid img-thumbnail rounded-circle border border-primary"
+                  alt=""
+                />
+                <h5 class="card-title mt-4 text-danger">Project 6</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary" id="prosix" onmouseover="mouseover6()" onmouseout="mouseout6()">preview</a>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <!-- Project section close here -->
+
+    <!-- contact me section start from here -->
+
+    <section class="contact py-5 " id="Contact">
+      <div class="container">
+        <div class="text-center mx-auto text-center my-5">
+          <h1 data-aos="fade-up" data-aos-offset="250">
+            Feel <span class="text-primary">Free </span>To<span
+              class="text-primary"
+            >
+              Connect
+            </span>
+          </h1>
+          <hr class="w-25 mx-auto" />
+        </div>
+
+        <div class="row p-4">
+          <div
+            class="col-sm-12 col-md-6 col-lg-6"
+            data-aos="flip-left"
+            data-aos-offset="250"
+          >
+            <form class="row g-3" action="#" autocomplete="off" onsubmit="validation()"> 
+              <div class="col-md-6">
+                <label for="inputname" class="form-label">Name</label>
+                <input type="name" class="form-control" id="inputname" onkeyup="keyupName()" onkeydown="keydoName()"   />
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" onkeyup="keyupEmail()" onkeydown="keydoEmail()" />
+              </div>
+              <div class="col-md-10">
+                <label for="inputContact" class="form-label">Contact</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="inputContact"
+                  placeholder="xxxx-xxx-xxx"
+                  onkeyup="keyupCont()"
+                  onkeydown="keydocont()"
+             
+                />
+              </div>
+              <div class="col-md-10">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress"
+                  placeholder="1234 Main St"
+                  onkeyup="keyupAdd()"
+                  onkeydown=" keydoAdd()"
+                 
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity" onkeyup="keyupCity()" onkeydown="keydoCity()" />
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>Uttrakhand</option>
+                  <option>Delhi</option>
+                  <option>Punjab</option>
+                  <option>Maharashtra</option>
+                  <option>Gujrat</option>
+                  <option>Banglore</option>
+                </select>
+              </div>
+              
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary px-5 py-2 mt-4">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div
+            class="col-sm-12 col-md-6 col-lg-6 m-auto text-end p-4 "
+            data-aos="fade-left"
+            data-aos-offset="200"
+          >
+            <img
+              src="images/contact.jpg"
+              class="img-fluid p-2 "
+              alt="contact-me image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact me section ends here -->
+
+    <!-- Footer starts here -->
+
+    <div class="container-fluid bg-dark text-white p-2 text-center">
+      Developed by Prerna negi
+    </div>
+
+    <!-- footer ends here -->
+  </body>
+  <!-- Js cdn link -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Aos cdn link -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="script.js"></script>
+</html>
